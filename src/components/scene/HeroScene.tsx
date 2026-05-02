@@ -45,7 +45,7 @@ export default function HeroScene({ scrollProgress, pointer }: HeroSceneProps) {
     <Canvas camera={{ position: [0, 0, 3.6], fov: 42 }} dpr={[1, 1.5]} className="hero-canvas">
       <ambientLight intensity={0.55} />
       <directionalLight position={[3, 2, 4]} intensity={1.1} />
-      <pointLight position={[-2.4, -1.5, 1.6]} color="#00ffd0" intensity={18} distance={6} />
+      <pointLight position={[-2.4, -1.5, 1.6]} color="#00ffd0" intensity={18} distance={7} />
       <Orb scrollProgress={scrollProgress} pointer={pointer} />
     </Canvas>
   );
