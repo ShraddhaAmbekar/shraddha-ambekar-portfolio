@@ -15,7 +15,7 @@ export default function JourneySection() {
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <h3 className="heading-font text-2xl text-white">{item.title}</h3>
                 <span className="rounded-full border border-cyan-200/30 px-3 py-1 text-xs tracking-[0.15em] text-cyan-100/70 uppercase">
-                  {item.year}
+                  {/* {item.year} */}
                 </span>
               </div>
               <p className="mt-4 max-w-3xl text-white/75">{item.text}</p>

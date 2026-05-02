@@ -26,9 +26,21 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${spaceGrotesk.variable} h-full antialiased`}
+      // className={`${inter.variable} ${spaceGrotesk.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">{children}<footer className="mt-32 border-t border-white/10 py-10 text-center text-white/60">
+  
+  <p className="text-sm">
+    © 2026 Shraddha Ambekar. All rights reserved.
+  </p>
+
+  <div className="mt-4 flex justify-center gap-6">
+    <a href="#">GitHub</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">Email</a>
+  </div>
+
+</footer></body>
     </html>
   );
 }

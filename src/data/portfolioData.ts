@@ -7,69 +7,84 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Nova Commerce",
+    title: "Travel U",
     description:
-      "A conversion-focused luxury commerce platform with cinematic product storytelling and intelligent personalization.",
-    stack: ["Next.js", "TypeScript", "GSAP", "Stripe"],
-    tone: "from-[#7f5bff]/40 via-[#3b82f6]/30 to-[#00ffe1]/30",
+      "A modern travel booking platform with dynamic tour packages, daily itineraries, and interactive image sliders for a smooth user experience.",
+    stack: ["React.js", "CSS", "Bootstrap"],
+    tone: "from-[#3b82f6]/40 via-[#06b6d4]/30 to-[#22d3ee]/30",
   },
   {
-    title: "Pulse Finance",
+    title: "Printing Service Website",
     description:
-      "An immersive analytics dashboard where complex financial flows become elegant and intuitive interactions.",
-    stack: ["React", "D3", "Framer Motion", "Node.js"],
-    tone: "from-[#8a7cff]/45 via-[#22d3ee]/30 to-[#0ea5e9]/30",
+      "A responsive frontend for an online printing service with clean product listings and seamless backend integration.",
+    stack: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    tone: "from-[#6366f1]/40 via-[#8b5cf6]/30 to-[#a78bfa]/30",
   },
   {
-    title: "Aether Studio",
+    title: "E-Commerce Web App",
     description:
-      "A digital experience for a creative agency blending 3D narratives, rich motion, and editorial design rhythm.",
-    stack: ["Next.js", "R3F", "GSAP", "Sanity"],
-    tone: "from-[#4f46e5]/40 via-[#9333ea]/35 to-[#06b6d4]/25",
+      "A feature-rich shopping platform with product search, filtering, cart management, and real-time updates using REST APIs.",
+    stack: ["Angular", "Angular Material", "Tailwind CSS"],
+    tone: "from-[#0ea5e9]/40 via-[#22d3ee]/30 to-[#67e8f9]/30",
   },
   {
-    title: "Orbit Health",
+    title: "Hotel Management App",
     description:
-      "A trustworthy and human healthcare portal crafted with micro-interactions and clear, calming information architecture.",
-    stack: ["TypeScript", "Tailwind", "Motion", "Prisma"],
-    tone: "from-[#2563eb]/35 via-[#6366f1]/35 to-[#22d3ee]/25",
+      "A hotel booking and management system with real-time room tracking, admin controls, and mobile-friendly UI.",
+    stack: ["Angular", "Bootstrap", "Json-server"],
+    tone: "from-[#2563eb]/40 via-[#4f46e5]/30 to-[#6366f1]/30",
   },
+  {
+    title: "School Website",
+    description:
+      "A responsive school website displaying information, announcements, and essential resources with a clean and accessible design.",
+    stack: ["HTML", "CSS", "JavaScript"],
+    tone: "from-[#16a34a]/40 via-[#4ade80]/30 to-[#22c55e]/30",
+  },
+  {
+    title: "OpsMind AI Website",
+    description:
+      "A modern AI-focused website showcasing tools and features with a clean UI and engaging user experience.",
+    stack: ["Next.js", "Tailwind CSS"],
+    tone: "from-[#9333ea]/40 via-[#c084fc]/30 to-[#e879f9]/30",
+  },
+
 ];
 
 export const skillGroups = [
   {
-    title: "Creative Frontend",
-    skills: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    title: "Frontend Development",
+    skills: ["React.js", "Angular", "Next.js", "TypeScript", "JavaScript"],
   },
   {
-    title: "Motion & Storytelling",
-    skills: ["GSAP Timelines", "ScrollTrigger", "SplitType", "Parallax Design", "Micro Interactions"],
+    title: "UI & Styling",
+    skills: ["Tailwind CSS", "Bootstrap", "CSS", "Responsive Design"],
   },
   {
-    title: "3D & Visual Systems",
-    skills: ["React Three Fiber", "Drei", "WebGL Basics", "Shader Thinking", "Performance Tuning"],
+    title: "Advanced & Tools",
+    skills: ["REST API Integration", "GSAP", "Framer Motion", "Basic Three.js"],
   },
 ];
 
 export const timeline = [
   {
-    year: "2022",
-    title: "Started Product Design + Frontend",
-    text: "Moved from visual experiments to production-ready interfaces with strong UX and interaction patterns.",
+    // year: "2022",
+    title: "Started Web Development",
+    text: "Learned HTML, CSS, and JavaScript while building basic responsive websites.",
   },
   {
-    year: "2023",
-    title: "Shipped First Motion-Driven Product",
-    text: "Led a full redesign with animation narratives that improved dwell time and brand perception.",
+    // year: "2023",
+    title: "Built Real Projects",
+    text: "Developed projects like Travel U and Printing Website with real-world UI and functionality.",
   },
   {
-    year: "2024",
-    title: "Focused on Premium Web Experiences",
-    text: "Specialized in cinematic scroll systems, 3D integration, and high-end digital storytelling.",
+    // year: "2024",
+    title: "Advanced Frontend Development",
+    text: "Worked with Angular, React, and API integrations to build scalable applications.",
   },
   {
-    year: "Now",
-    title: "Building Future-Ready Interfaces",
-    text: "Crafting emotionally engaging products where design, performance, and technology feel seamless.",
+    // year: "Now",
+    title: "Building Modern Web Experiences",
+    text: "Focused on creating fast, responsive, and user-friendly web applications for real users.",
   },
 ];
