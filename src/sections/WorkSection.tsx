@@ -28,6 +28,23 @@ export default function WorkSection() {
                     </span>
                   ))}
                 </div>
+                {/* Highlights (NEW ADDED PART) */}
+                {project.highlights && (<ul className="mt-4 space-y-1 text-sm text-white/70">
+                  {project.highlights.map((point, idx) => (<li key={idx} className="flex gap-2">
+                    <span className="text-white/60">•</span>                        <span>{point}</span>
+                  </li>))}
+                </ul>)}
+              </div>
+              {/* Footer Actions (Optional Buttons) */}
+              <div className="mt-6 flex gap-3">
+                <button className="rounded-full bg-white/10 px-4 py-2 text-xs text-white hover:bg-white/20 transition">
+                  Live Demo
+                </button>
+                <button className="rounded-full border border-white/20 px-4 py-2 text-xs text-white/80 hover:bg-white/10 transition">
+                  View Code
+                </button>
+
+
               </div>
             </article>
           ))}
