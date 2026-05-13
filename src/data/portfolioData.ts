@@ -36,7 +36,7 @@ export const projects: Project[] = [
   },
 
   {
-    title: "HummingKitez Playgroup Website",
+    title: "Playgroup Website",
     description:
       "A visually rich playgroup website designed to showcase activities, services, and experiences with immersive UI design and smooth navigation experience.",
     stack: ["HTML", "CSS", "JavaScript"],
@@ -78,7 +78,7 @@ export const projects: Project[] = [
   },
 
   {
-    title: "GlamourLite Website",
+    title: "Beuty parler Website",
     description:
       "A premium fashion and beauty website designed to highlight branding, aesthetics, and product showcase with a modern luxury UI experience.",
     stack: ["React.js", "Tailwind CSS"],
