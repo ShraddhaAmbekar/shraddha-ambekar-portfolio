@@ -50,33 +50,41 @@ export default function HeroSection() {
           AVAILABLE FOR PREMIUM COLLABORATIONS
         </div>
 
-        <div className="grid items-end gap-6 pt-12 lg:grid-cols-[1.15fr_0.85fr]">
-          <div className="hero-copy space-y-6">
-          <h1 className="heading-font hero-title max-w-3xl font-semibold text-white">
-  Hi, I’m Shraddha Ambekar
-  <br />
- 
-</h1>
-<span className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
-    Full Stack Web Developer
-  </span>
-<p className="hero-sub max-w-2xl text-base text-white/75 md:text-xl">
-  I build responsive, high-performance web applications using React, Angular, and modern frontend technologies. 
-  Focused on clean UI, scalability, and seamless user experiences.
-</p>
+        <div className="items-center grid gap-7 pt-0 lg:grid-cols-[1.17fr_0.85fr]">
+          <div className="hero-copy space-y-4 max-w-3xl">
+            <h1 className="heading-font hero-title max-w-3xl font-semibold text-white leading-tight">
+              Building Modern, Fast & Scalable Web Applications
+            </h1>
+
+            <span className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
+              Frontend Developer • React • Angular • UI Engineer
+            </span>
+
+            <p className="hero-sub max-w-2xl text-base text-white/75 md:text-xl">
+              I am Shraddha Ambekar, a frontend developer who specializes in React, Angular, Tailwind CSS and modern frontend architecture to build responsive, fast-loading
+              and visually engaging digital experiences optimized for performance and scalability.
+            </p>
             <div className="flex flex-wrap gap-4">
-              <MagneticButton label="View Selected Work" href="#work" />
-              <MagneticButton label="Start a Project" href="#contact" className="bg-white/8" />
+
+              <MagneticButton label="View My Work" href="#work" />
+              <MagneticButton label="Hire Me" href="#contact" className="bg-white/8" />
+              <div className="flex gap-6 text-xs text-white/60 pt-4">
+                <span>✔ 2+ Years Experience</span>
+                <span>✔ Freelance Projects Delivered</span>
+                <span>✔ UI/Performance Focused</span>
+              </div>
             </div>
           </div>
-          <img src="/assets/hero1.png" alt="hero" className="w-full h-full object-cover" />
+          <div>
+            <img src="/assets/hero-5.png" alt="hero" className="w-full h-full object-cover" />
+          </div>
           <motion.div
-            // className="hero-panel glass-panel relative h-[48vh] min-h-[360px] overflow-hidden rounded-[2.2rem] border border-white/15"
-            // initial={{ opacity: 0, y: 28 }}
-            // animate={{ opacity: 1, y: 0 }}
-            // transition={{ delay: 0.2, duration: 0.9 }}
+          // className="hero-panel glass-panel relative h-[48vh] min-h-[360px] overflow-hidden rounded-[2.2rem] border border-white/15"
+          // initial={{ opacity: 0, y: 28 }}
+          // animate={{ opacity: 1, y: 0 }}
+          // transition={{ delay: 0.2, duration: 0.9 }}
           >
-         
+
           </motion.div>
         </div>
       </div>

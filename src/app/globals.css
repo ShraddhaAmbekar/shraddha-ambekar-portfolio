@@ -42,8 +42,8 @@ body {
 .glass-panel {
   border: 1px solid rgba(255, 255, 255, 0.16);
   background: linear-gradient(130deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.02));
-  backdrop-filter: blur(18px);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+   backdrop-filter: blur(22px);
 }
 
 .hero-gradient {
@@ -73,6 +73,7 @@ body {
   height: 240px;
   width: 240px;
   background: rgba(138, 124, 255, 0.25);
+    animation-duration: 11s;
 }
 
 .floating-bg-2 {
@@ -82,19 +83,19 @@ body {
   width: 280px;
   background: rgba(0, 255, 208, 0.2);
   animation-delay: 0.8s;
+    animation-duration: 14s;
 }
-.hero-bg-after{
-  .hero-bg::after {
-    content: "";
-    position: absolute;
-    right: 10%;
-    top: 50%;
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, rgba(59,130,246,0.3), transparent 70%);
-    filter: blur(100px);
-    transform: translateY(-50%);
-  }
+
+.hero-bg::after {
+  content: "";
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(59,130,246,0.3), transparent 70%);
+  filter: blur(100px);
+  transform: translateY(-50%);
 }
 .hero-panel {
   perspective: 1200px;
@@ -111,8 +112,8 @@ body {
 }
 
 .hero-title {
-  font-size: clamp(2.5rem, 8vw, 6.4rem);
-  line-height: 0.93;
+  font-size: clamp(2.2rem, 6vw, 5.2rem);
+  line-height: 0.99;
   letter-spacing: -0.03em;
 }
 

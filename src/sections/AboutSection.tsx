@@ -9,7 +9,7 @@ export default function AboutSection() {
           <p className="section-eyebrow">ABOUT ME</p>
 
           <h2 className="section-title heading-font mt-3 text-white">
-            Building Modern & Responsive Web Applications
+            Turning Ideas Into Immersive Products
           </h2>
 
           <p className="about-line mt-6 max-w-2xl text-lg leading-relaxed text-white/75" data-reveal>
@@ -26,7 +26,7 @@ export default function AboutSection() {
         <div className="grid gap-4 sm:grid-cols-3 md:grid-cols-1">
           
           <div className="glass-panel rounded-3xl p-6 text-center">
-            <p className="counter-value heading-font text-5xl text-white" data-counter="10">
+            <p className="counter-value heading-font text-5xl text-white" data-counter="20">
               0
             </p>
             <p className="mt-2 text-sm tracking-wide text-white/70 uppercase">
@@ -35,7 +35,7 @@ export default function AboutSection() {
           </div>
 
           <div className="glass-panel rounded-3xl p-6 text-center">
-            <p className="counter-value heading-font text-5xl text-white" data-counter="1">
+            <p className="counter-value heading-font text-5xl text-white" data-counter="2">
               0
             </p>
             <p className="mt-2 text-sm tracking-wide text-white/70 uppercase">
