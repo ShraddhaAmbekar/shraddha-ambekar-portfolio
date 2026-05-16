@@ -13,7 +13,7 @@ export const projects: Project[] = [
   {
     title: "Tours and Travel Website",
     description:
-      "A modern travel website with dynamic tour packages, detailed itineraries, and interactive image sliders. Focused on delivering a smooth and engaging user experience with responsive design and optimized UI flow.",
+      "A modern travel website with dynamic tour packages, detailed itineraries, and interactive image sliders. Focused on delivering a engaging user experience with responsive design.",
     stack: ["HTML","CSS", "JavaScript", "React.js", "CSS", "Bootstrap"],
     tone: "from-[#3b82f6]/40 via-[#06b6d4]/30 to-[#22d3ee]/30",
     highlights: [
