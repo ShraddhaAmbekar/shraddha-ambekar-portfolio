@@ -14,7 +14,7 @@ export default function ContactPage() {
 </div>
       <div className="w-full max-w-5xl">
 
-        {/* HEADER */}
+        {/* top HEADER */}
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold heading-font">
             Get In Touch
