@@ -1,7 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
-import type { MouseEvent } from "react";
+import Link from "next/link";
+import { motion, useMotionValue, useSpring } from "framer-motion";
 import { useRef } from "react";
 
 type MagneticButtonProps = {
@@ -10,36 +10,48 @@ type MagneticButtonProps = {
   className?: string;
 };
 
-export default function MagneticButton({ label, href, className }: MagneticButtonProps) {
-  const buttonRef = useRef<HTMLAnchorElement>(null);
+export default function MagneticButton({
+  label,
+  href,
+  className,
+}: MagneticButtonProps) {
+  const ref = useRef<HTMLAnchorElement>(null);
 
-  const handleMove = (event: MouseEvent<HTMLAnchorElement>) => {
-    const element = buttonRef.current;
-    if (!element) return;
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
 
-    const bounds = element.getBoundingClientRect();
-    const x = event.clientX - bounds.left - bounds.width / 2;
-    const y = event.clientY - bounds.top - bounds.height / 2;
-    element.style.transform = `translate(${x * 0.12}px, ${y * 0.2}px)`;
+  const springX = useSpring(x, { stiffness: 200, damping: 15 });
+  const springY = useSpring(y, { stiffness: 200, damping: 15 });
+
+  const handleMove = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const el = ref.current;
+    if (!el) return;
+
+    const rect = el.getBoundingClientRect();
+
+    const offsetX = e.clientX - rect.left - rect.width / 2;
+    const offsetY = e.clientY - rect.top - rect.height / 2;
+
+    x.set(offsetX * 0.2);
+    y.set(offsetY * 0.3);
   };
 
   const handleLeave = () => {
-    const element = buttonRef.current;
-    if (!element) return;
-    element.style.transform = "translate(0px, 0px)";
+    x.set(0);
+    y.set(0);
   };
 
   return (
-    <motion.a
-      ref={buttonRef}
-      href={href}
-      onMouseMove={handleMove}
-      onMouseLeave={handleLeave}
-      whileHover={{ scale: 1.02 }}
-      whileTap={{ scale: 0.98 }}
-      className={`cta-button inline-flex items-center justify-center rounded-2xl px-7 py-3 font-semibold tracking-wide text-white transition-transform duration-300 ${className ?? ""}`}
-    >
-      {label}
-    </motion.a>
+    <motion.div style={{ x: springX, y: springY }}>
+      <Link
+        href={href}
+        ref={ref}
+        onMouseMove={handleMove}
+        onMouseLeave={handleLeave}
+        className={`cta-button inline-flex items-center justify-center rounded-2xl px-7 py-3 font-semibold tracking-wide text-white transition-transform hover:scale-105 active:scale-95 ${className ?? ""}`}
+      >
+        {label}
+      </Link>
+    </motion.div>
   );
 }

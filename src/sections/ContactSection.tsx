@@ -17,7 +17,7 @@ export default function ContactSection() {
             If you care about performance, emotion, and detail in every frame, we should talk.
           </p>
           <div className="mt-8">
-            <MagneticButton label="Book a Discovery Call" href="mailto:ambekarshraddha21@gmail.com" />
+            <MagneticButton label="Book a Discovery Call" href="/contact" />
           </div>
         </div>
       </div>

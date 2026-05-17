@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { projects } from "../data/portfolioData";
 
 export default function WorkSection() {
@@ -32,7 +33,7 @@ export default function WorkSection() {
                   </p>
 
                   <button className="mt-6 rounded-full border border-white/20 px-6 py-3 text-sm text-white transition hover:bg-white/10">
-                    Open Projects
+                    <Link href="/projects">Open Projects</Link>
                   </button>
                 </div>
               ) : (
