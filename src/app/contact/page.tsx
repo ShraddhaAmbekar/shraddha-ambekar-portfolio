@@ -17,7 +17,7 @@ export default function ContactPage() {
         {/* top HEADER */}
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold heading-font">
-            Get In Touch
+            Get In Touch with <span className="text-cyan-400">Me</span>
           </h1>
 
           <p className="mt-6 text-white/70 max-w-2xl mx-auto">
