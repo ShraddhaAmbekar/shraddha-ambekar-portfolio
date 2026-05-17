@@ -21,7 +21,7 @@ export default function ContactPage() {
           </h1>
 
           <p className="mt-6 text-white/70 max-w-2xl mx-auto">
-            Have a project idea, freelance work, or collaboration in mind?
+            If you have a project idea, freelance work, or collaboration in mind?
             I’m always open to discussing new opportunities.
           </p>
         </div>
