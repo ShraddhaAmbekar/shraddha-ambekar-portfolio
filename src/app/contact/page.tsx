@@ -26,7 +26,7 @@ export default function ContactPage() {
           </p>
         </div>
 
-        {/* GRID */}
+        {/* GRID layout*/}
         <div className="mt-14 grid md:grid-cols-2 gap-10">
 
           {/* CONTACT FORM */}
