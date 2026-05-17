@@ -29,7 +29,7 @@ export default function ContactPage() {
         {/* GRID*/}
         <div className="mt-14 grid md:grid-cols-2 gap-10">
 
-          {/* CONTACT FORM */}
+          {/* CONTACT FORM for interaction */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
